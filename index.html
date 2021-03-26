@@ -1,64 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="icon" href="icons/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
-        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
-        <link rel="stylesheet" type="text/css" href="icons/fontIcons/homePackagesIcon/flaticon.css" />
-        <link rel="stylesheet" href="css/homeResponsive.css" />
-        <title>Travelicious | Tech Sparks</title>
-    </head>
-    <body>
-        <header>
-            <div class="header-overlay"></div>
-            <nav class="main-nav">
-                <div class="row nav-wrapper">
-                    <div class="logo-container"><p class="nav-logo">Travelicious</p></div>
-                    <input type="checkbox" name="hamburgerMenu" id="hamburgerMenu" /> <label for="hamburgerMenu" class="hamburger-btn"><ion-icon name="reorder-three-outline"></ion-icon></label>
-                    <div class="nav-links">
-                        <li class="nav-link"><a href="#">Home</a></li>
-                        <li class="nav-link main-nav-dropdown-link">
-                            <a href="#" class="packages-link">Packages <ion-icon name="chevron-down-outline" class="dropdown-icon"></ion-icon></a>
-                            <ul class="main-nav-dropdown">
-                                <li><a href="#">Domestic</a></li>
-                                <li><a href="#">International</a></li>
-                                <li><a href="#">Honeymoon</a></li>
-                                <li><a href="#">Popular Destinations</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-link"><a href="#">Blog</a></li>
-                        <li class="nav-link"><a href="#">Events</a></li>
-                        <li class="nav-link main-nav-dropdown-link">
-                            <a href="#" class="support-link">Support <ion-icon name="chevron-down-outline" class="dropdown-icon"></ion-icon></a>
-                            <ul class="main-nav-dropdown">
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                            </ul>
-                        </li>
-                    </div>
-                </div>
-            </nav>
-            <div class="row">
-                <div class="showcase">
-                    <div class="showcase-text-top">
-                        <div class="text-lines"></div>
-                        <p>Luxury Tours & Travels</p>
-                        <div class="text-lines"></div>
-                    </div>
-                    <h1>Welcome To Travelicious</h1>
-                    <p class="showcase-paragraph">Discover hidden wonders on travels curated by Travelicious</p>
-                    <a href="#" class="showcase-btn">Read More</a>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="icons/fontIcons/homePackagesIcon/flaticon.css" />
+    <title>Travelicious</title>
+</head>
+<body>
+    <header>
+        <div class="header-overlay"></div>
+        <nav class="main-nav">
+            <div class="row nav-wrapper">
+                <div class="logo-container"><p class="nav-logo">Travelicious</p></div>
+                <input type="checkbox" name="hamburgerMenu" id="hamburgerMenu" /> <label for="hamburgerMenu" class="hamburger-btn"><ion-icon name="reorder-three-outline"></ion-icon></label>
+                <div class="nav-links">
+                    <li class="nav-link"><a href="#">Home</a></li>
+                    <li class="nav-link main-nav-dropdown-link">
+                        <a href="#" class="packages-link">Packages <ion-icon name="chevron-down-outline" class="dropdown-icon"></ion-icon></a>
+                        <ul class="main-nav-dropdown">
+                            <li><a href="#">Domestic</a></li>
+                            <li><a href="#">International</a></li>
+                            <li><a href="#">Honeymoon</a></li>
+                            <li><a href="#">Popular Destinations</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-link"><a href="#">Blog</a></li>
+                    <li class="nav-link"><a href="#">Events</a></li>
+                    <li class="nav-link main-nav-dropdown-link">
+                        <a href="#" class="support-link">Support <ion-icon name="chevron-down-outline" class="dropdown-icon"></ion-icon></a>
+                        <ul class="main-nav-dropdown">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </li>
                 </div>
             </div>
-        </header>
-        
-        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-    </body>
+        </nav>
+        <div class="row">
+            <div class="showcase">
+                <div class="showcase-text-top">
+                    <div class="text-lines"></div>
+                    <p>Luxury Tours & Travels</p>
+                    <div class="text-lines"></div>
+                </div>
+                <h1>Welcome To Travelicious</h1>
+                <p class="showcase-paragraph">Discover hidden wonders on travels curated by Travelicious</p>
+                <a href="#" class="showcase-btn">Read More</a>
+            </div>
+        </div>
+    </header>
+
+<!---------------------------------DESTINATION SECTION--------------------------------->
+
+    <section class="destination-section">
+        <div class="row">
+            <h2>Top Destinations</h2>
+            <div class="destination-grid-container">
+                <div class="destination-grid-item">
+                    <img src="images/destinationImage1.jpg" alt="Europe's Image" />
+                    <div class="destination-overlay">
+                        <p class="destination-country">Europe</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quibusdam.</p>
+                        <a href="#" class="btn-white">View Destination</a>
+                    </div>
+                </div>
+                <div class="destination-grid-item">
+                    <img src="images/destinationImage2.jpg" alt="Thailand's Image" />
+                    <div class="destination-overlay">
+                        <p class="destination-country">Thailandia</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quibusdam.</p>
+                        <a href="#" class="btn-white">View Destination</a>
+                    </div>
+                </div>
+                <div class="destination-grid-item">
+                    <img src="images/destinationImage3.jpg" alt="Japan's Image" />
+                    <div class="destination-overlay">
+                        <p class="destination-country">Asia</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quibusdam.</p>
+                        <a href="#" class="btn-white">View Destination</a>
+                    </div>
+                </div>
+                <div class="destination-grid-item">
+                    <img src="images/destinationImage4.jpg" alt="Scandinavia's Image" />
+                    <div class="destination-overlay">
+                        <p class="destination-country">Scandinavia</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quibusdam.</p>
+                        <a href="#" class="btn-white">View Destination</a>
+                    </div>
+                </div>
+                <div class="destination-grid-item">
+                    <img src="images/destinationImage5.jpg" alt="India's Image" />
+                    <div class="destination-overlay">
+                        <p class="destination-country">India</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quibusdam.</p>
+                        <a href="#" class="btn-white">View Destination</a>
+                    </div>
+                </div>
+                <div class="destination-grid-item">
+                    <img src="images/destinationImage6.jpg" alt="America's Image" />
+                    <div class="destination-overlay">
+                        <p class="destination-country">United States</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quibusdam.</p>
+                        <a href="#" class="btn-white">View Destination</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!---------------------------------VIDEO SECTION--------------------------------->
+
+    <section class="video-section">
+        <div class="video-container"><video src="videos/homeVideo.mp4" autoplay="true" loop="true"></video></div>
+        <div class="video-overlay"></div>
+        <div class="video-text-container">
+            <p class="video-text">
+                Your <br />
+                Next <span>Holiday</span>
+            </p>
+        </div>
+        <div class="video-button-container"><a href="#" class="video-button">View All Packages</a></div>
+    </section>
+
+<!---------------------------------ROOMS SECTION--------------------------------->
+
+    <section class="rooms-section">
+        <div class="row">
+            <div class="rooms-heading">
+                <h2>Our Rooms</h2>
+                <h3>Check Out Our Spacious Rooms</h3>
+            </div>   
+        </div>
+
+        <div class="rooms-images">
+            <div class="rooms-image-container">
+                <img class="rooms-image" src="images/singleRoom.jpg" alt="Hotel Single Room">
+            </div>
+            <div class="rooms-image-container">
+                <img class="rooms-image" src="images/doubleRoom.jpg" alt="Hotel Double Room">
+            </div>
+            <div class="rooms-image-container">
+                <img class="rooms-image" src="images/luxuryRoom.jpg" alt="Hotel Luxury Room">
+            </div>
+            
+        </div>
+    </section>
+
+<!---------------------------------ARTICLES SECTION--------------------------------->
+
+    <section class="articles-section">
+        <div class="row">
+            <h2>Articles & News</h2>
+            <div class="articles-grid-container">
+                <div class="articles-grid-item">
+                    <div class="articles-image-container"><img src="images/articlesImage1.jpg" alt="Eiffel Tower Image" /></div>
+                    <div class="articles-text-container">
+                        <p>Our News</p>
+                        <h4>Travel Events</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit maiores, veritatis a sit assumenda dolorem.</p>
+                        <a href="#" class="btn-purple">Read More</a>
+                    </div>
+                </div>
+                <div class="articles-grid-item">
+                    <div class="articles-image-container"><img src="images/articlesImage2.jpg" alt="Travelling Guy" /></div>
+                    <div class="articles-text-container">
+                        <p>Travel Tips</p>
+                        <h4>New Routes</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit maiores, veritatis a sit assumenda dolorem.</p>
+                        <a href="#" class="btn-white">Read More</a>
+                    </div>
+                </div>
+                <div class="articles-grid-item">
+                    <div class="articles-text-container">
+                        <p>Our News</p>
+                        <h4>Best Beaches</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit maiores, veritatis a sit assumenda dolorem.</p>
+                        <a href="#" class="btn-white">Read More</a>
+                    </div>
+                    <div class="articles-image-container"><img src="images/articlesImage3.jpg" alt="Girl on Beach" /></div>
+                </div>
+                <div class="articles-grid-item">
+                    <div class="articles-text-container">
+                        <p>Travel Tips</p>
+                        <h4>Love Travel</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit maiores, veritatis a sit assumenda dolorem.</p>
+                        <a href="#" class="btn-red">Read More</a>
+                    </div>
+                    <div class="articles-image-container"><img src="images/articlesImage4.jpg" alt="Travelling Guy" /></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!---------------------------------DISCOVER SECTION--------------------------------->
+
+    <section class="discover-section">
+        <div>
+            <img src="images/discoverImage1.jpg" alt="City Image" />
+            <p class="discover-text">Discover Cities</p>
+            <a href="#" class="btn-white">Details</a>
+        </div>
+        <div>
+            <img src="images/discoverImage2.jpg" alt="Nature Image" />
+            <p class="disover-text">Discover Nature</p>
+            <a href="#" class="btn-white">Details</a>
+        </div>
+        <div class="discover-overlay"></div>
+    </section>
+
+<!---------------------------------PACKAGES SECTION--------------------------------->
+
+    <section class="packages-section">
+        <div class="row">
+            <h2>Our Packages</h2>
+            <div class="packages-container">
+                <div class="packages-item">
+                    <div class="packages-image-container"><img src="images/packagesImage1.jpg" alt="Berlin's Image" /></div>
+                    <div class="packages-text-container">
+                        <i class="flaticon-arc-de-triomphe landmark-icon landmark-icon-yellow"></i>
+                        <h3>Berlin</h3>
+                        <p><ion-icon name="location-outline" class="packages-location-icon"></ion-icon>Europe</p>
+                        <hr />
+                        <div class="prices-container">
+                            <p>
+                                Cultural <br />
+                                Relax
+                            </p>
+                            <p>500 $</p>
+                        </div>
+                        <hr />
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tempore corrupti nam natus ratione non</p>
+                        <a href="#" class="btn-yellow">Details</a>
+                    </div>
+                </div>
+                <div class="packages-item">
+                    <div class="packages-image-container"><img src="images/packagesImage2.jpg" alt="Japan's Image" /></div>
+                    <div class="packages-text-container">
+                        <i class="flaticon-japan-architecture-shape landmark-icon landmark-icon-red"></i>
+                        <h3>Japan</h3>
+                        <p><ion-icon name="location-outline" class="packages-location-icon"></ion-icon>Asia</p>
+                        <hr />
+                        <div class="prices-container">
+                            <p>
+                                History <br />
+                                Cultural
+                            </p>
+                            <p>700 $</p>
+                        </div>
+                        <hr />
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tempore corrupti nam natus ratione non</p>
+                        <a href="#" class="btn-red">Details</a>
+                    </div>
+                </div>
+                <div class="packages-item">
+                    <div class="packages-image-container"><img src="images/packagesImage3.jpg" alt="San Francisco's Image" /></div>
+                    <div class="packages-text-container">
+                        <i class="flaticon-statue-of-liberty landmark-icon landmark-icon-purple"></i>
+                        <h3>San Francisco</h3>
+                        <p><ion-icon name="location-outline" class="packages-location-icon"></ion-icon>United States</p>
+                        <hr />
+                        <div class="prices-container">
+                            <p>
+                                Sport <br />
+                                Relax
+                            </p>
+                            <p>400 $</p>
+                        </div>
+                        <hr />
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tempore corrupti nam natus ratione non</p>
+                        <a href="#" class="btn-purple">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-------------------------------TESTIMONIALS SECTION------------------------------->
+
+    <section id="testimonials" class="testimonials-section">
+        <div class="row">
+            <div class="testimonials-heading">
+                <h2>Testimonials</h2>
+                <h3>What Our Guests Are Saying About Us</h3>
+            </div>
+            
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <div class="testimonial-top">
+                        <span class="upper-quotes">&#8220;</span>
+                        <p class="testimonial-paragraph"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Sint voluptatibus et quod sequi nemo, eum, repudiandae veniam repellat, dolore 
+                            error vel deleniti libero.
+                        </p>
+                        <span class="lower-quotes">&#8222;</span>
+                    </div>
+                    <div class="testimonial-bottom">
+                        <img class="user-image" src="images/userImage1.jpg" alt="User Image">
+                        <p class="user-names">Katheryn Wolf</p>
+                        <p class="user-rating">★★★★☆</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-top">
+                        <span class="upper-quotes">&#8220;</span>
+                        <p class="testimonial-paragraph"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Sint voluptatibus et quod sequi nemo, eum, repudiandae veniam repellat, dolore 
+                            error vel deleniti libero.
+                        </p>
+                        <span class="lower-quotes">&#8222;</span>
+                    </div>
+                    <div class="testimonial-bottom">
+                        <img class="user-image" src="images/userImage2.jpg" alt="User Image">
+                        <p class="user-names">Nick Fury</p>
+                        <p class="user-rating">★★★★★</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-top">
+                        <span class="upper-quotes">&#8220;</span>
+                        <p class="testimonial-paragraph"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Sint voluptatibus et quod sequi nemo, eum, repudiandae veniam repellat, dolore 
+                            error vel deleniti libero.
+                        </p>
+                        <span class="lower-quotes">&#8222;</span>
+                    </div>
+                    <div class="testimonial-bottom">
+                        <img class="user-image" src="images/userImage3.jpg" alt="User Image">
+                        <p class="user-names">Angela Woods</p>
+                        <p class="user-rating">★★★★☆</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!---------------------------------FOOTER SECTION--------------------------------->
+
+    <footer>
+        <div class="row">
+            <div class="footer-main">
+                <div class="footer-item">
+                    <h4>Our Awards</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptate aspernatur Odit accusamus possimus a? Nesciunt praesentium ea nobis cum.</p>
+                    <p class="footer-logo">Travelicious</p>
+                </div>
+                <div class="footer-item footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><ion-icon name="phone-portrait-outline" class="footer-contact-icons"></ion-icon>+1 (647) 561-4444</p>
+                    <p><ion-icon name="location-outline" class="footer-contact-icons"></ion-icon>123 King Street, Toronto, Ontario, L5W 1C9</p>
+                    <p><ion-icon name="time-outline" class="footer-contact-icons"></ion-icon>Mon - Sat 8:00 am - 6:00 pm Sunday CLOSED</p>
+                    <div class="social-icons">
+                        <div class="social-icons-item">
+                            <a href="#"><img src="icons/socialIcons/facebook.svg" alt="Facebook Icon" /></a>
+                        </div>
+                        <div class="social-icons-item">
+                            <a href="#"><img src="icons/socialIcons/twitter.svg" alt="Twitter Icon" /></a>
+                        </div>
+                        <div class="social-icons-item">
+                            <a href="#"><img src="icons/socialIcons/youtube.svg" alt="Youtube Icon" /></a>
+                        </div>
+                        <div class="social-icons-item">
+                            <a href="# "><img src="icons/socialIcons/pinterest.svg" alt="Pinterest Icon" /></a>
+                        </div>
+                        <div class="social-icons-item">
+                            <a href="#"><img src="icons/socialIcons/instagram.svg" alt="Instagram Icon" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <h4>Recent Trips</h4>
+                    <div class="footer-image-grid">
+                        <div><img src="images/footerGridImage1.jpg" alt="Toronto Image" /></div>
+                        <div><img src="images/footerGridImage2.jpg" alt="Italy Image" /></div>
+                        <div><img src="images/footerGridImage3.jpg" alt="London Image" /></div>
+                        <div><img src="images/footerGridImage4.jpg" alt="Taj Mahal Image" /></div>
+                        <div><img src="images/footerGridImage5.jpg" alt="Dubai Image" /></div>
+                        <div><img src="images/footerGridImage6.jpg " alt="Copenhagen Image " /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="footer-bottom">
+                <div class="footer-bottom-item"><p class="copyright">Copyright © 2021 All Rights Reserved</p></div>
+                <div class="footer-bottom-item">
+                    <ul class="footer-nav-links">
+                        <li><a href="# ">Home</a></li>
+                        <li><a href="# ">Blog</a></li>
+                        <li><a href="# ">About Us</a></li>
+                        <li><a href="# ">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-credits">
+                <p class="made-by-text">Made with <i class="ion-md-heart heart-icon"></i> in <i class="fab fa-canadian-maple-leaf maple-leaf-icon"></i> Toronto, Canada by Harshit Behl & Kulpreet Singh</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
 </html>
