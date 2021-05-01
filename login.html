@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="icons/fontIcons/homePackagesIcon/flaticon.css" />
+    <title>Travelicious | Log In / Sign Up</title>
+  </head>
+  <body>
+    <header>
+        <nav class="main-nav">
+            <div class="row nav-wrapper">
+                <div class="logo-container"><p class="nav-logo">Travelicious</p></div>
+                <div class="nav-links">
+                    <li class="nav-link"><a href="index.html">Home</a></li>
+                    <li class="nav-link"><a href="booking.html">Booking</a></li>
+                    <li class="nav-link"><a href="contact.html">Contact Us</a></li>
+                    <li class="nav-link"><a href="about.html">About Us</a></li>
+                    <li class="nav-link"><a href="login.html">Sign in</a></li>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="login">
+      <div class="login__container">
+        <h2 class="login__heading">Log In</h2>
+        <form class="login__form" action="">
+          <input class="email" type="email" name="email" placeholder="Email">
+          <input class="password" type="password" name="password" placeholder="Password">
+          <input class="login__submit" type="submit" value="Log In"> 
+          <p class="switch-user-type">Not a member? <span onclick="switchLogin()">Sign Up</span></p> 
+        </form>
+      </div>
+      <div class="login__img"></div>
+    </section>
+    <section class="signup">
+      <div class="signup__img"></div>
+      <div class="signup__container">
+        <h2 class="signup__heading">Sign Up</h2>
+        <form class="signup__form" action="">
+          <input class="email" type="email" name="email" placeholder="Email">
+          <input class="password" type="password" name="password" placeholder="Password">
+          <input class="signup__submit" type="submit" value="Sign Up"> 
+          <p class="switch-user-type">Already a member? <span onclick="switchSignup()">Log In</span></p> 
+        </form>
+      </div>
+    </section>
+
+    <!---------------------------------FOOTER SECTION--------------------------------->
+
+    <footer>
+      <div class="row">
+          <div class="footer-bottom">
+              <div class="footer-bottom-item"><p class="copyright">Copyright © 2021 All Rights Reserved</p></div>
+              <div class="footer-bottom-item">
+                  <ul class="footer-nav-links">
+                    <li><a href="# ">Home</a></li>
+                    <li><a href="# ">Bookings</a></li>
+                    <li><a href="# ">About Us</a></li>
+                    <li><a href="# ">Contact Us</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="footer-credits">
+              <p class="made-by-text">Made with <i class="ion-md-heart heart-icon"></i> in <i class="fab fa-canadian-maple-leaf maple-leaf-icon"></i> Toronto, Canada by Harshit Behl & Kulpreet Singh</p>
+          </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>

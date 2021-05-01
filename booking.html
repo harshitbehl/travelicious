@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/booking.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="icons/fontIcons/homePackagesIcon/flaticon.css" />
+    <title>Travelicious | Bookings</title>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="row nav-wrapper">
+                <div class="logo-container"><p class="nav-logo">Travelicious</p></div>
+                <div class="nav-links">
+                    <li class="nav-link"><a href="index.html">Home</a></li>
+                    <li class="nav-link"><a href="booking.html">Booking</a></li>
+                    <li class="nav-link"><a href="contact.html">Contact us</a></li>
+                    <li class="nav-link"><a href="about.html">About Us</a></li>
+                    <li class="nav-link"><a href="login.html">Sign in</a></li>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="showcase">
+            <div class="showcase__icon-container">
+                <div onclick="showStays()" class="showcase__icon ">
+                    <img class="showcase__icon-logo" src="images/bookingImages/hotel.svg">
+                    <h3 class="showcase__icon-label stays-icon">Stays</h3>
+                </div>
+                <div onclick="showFlights()" class="showcase__icon flights-icon">
+                    <img class="showcase__icon-logo" src="images/bookingImages/plane.svg">
+                    <h3 class="showcase__icon-label">Flights</h3>
+                </div>
+                <div onclick="showCars()" class="showcase__icon cars-icon">
+                    <img class="showcase__icon-logo" src="images/bookingImages/car.svg">
+                    <h3 class="showcase__icon-label">Cars</h3>
+                </div>
+                <div onclick="showPackages()" class="showcase__icon packages-icon">
+                    <img class="showcase__icon-logo" src="images/bookingImages/suitcases.svg">
+                    <h3 class="showcase__icon-label">Packages</h3>
+                </div>
+                <div onclick="showThings()" class="showcase__icon things-icon">
+                    <img class="showcase__icon-logo" src="images/bookingImages/signpost.svg">
+                    <h3 class="showcase__icon-label">Things to do</h3>
+                </div>
+            </div>
+            <div class="showcase__data-container">
+                <div class="stays">
+                    <form action="">
+                        <div class="stays-form">
+                            <input type="search" name="stays__going-to" class="stays__going-to" placeholder="Going to">
+                            <div class="checkin">
+                                <label for="check-in">check-in</label>
+                                <input type="date" name="check-in">
+                            </div>
+                            <div class="checkout">
+                                <label for="check-out">check-out</label>
+                                <input type="date" name="check-out" >
+                            </div>
+                            <div class="stays__travelers">
+                                <label for="travelers">travelers</label>
+                                <input type="number" name="travelers">
+                            </div>
+                        </div>
+                        <input type="submit" value="search" class="search-btn">
+                    </form>
+                </div>
+                <div class="flights">
+                    <div class="flights__selection">
+                        <div class="flights__type">
+                            <h4 onclick="flightReturn()">Return</h4>
+                            <h4 onclick="flightOneWay()">One-Way</h4>
+                        </div>
+                        <div  class="flights__traveler-type">
+                            <div class="flights__travelers">
+                                <label for="travelers">Travelers</label>
+                                <input type="number" name="travelers">
+                            </div>
+                            <div class="class">
+                                <label for="class">Class</label>
+                                <select name="class">
+                                    <option value="economy">Economy Class</option>
+                                    <option value="premium-economy">Premium Economy Class</option>
+                                    <option value="business">Business Class</option>
+                                    <option value="first-class">First Class</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="" class="">
+                        <div class="flights-form">
+                            <input type="search" name="flights__from" class="flights__from" placeholder="Leaving from">
+                            <input type="search" name="flights__going-to" class="flights__going-to" placeholder="Going to">
+                            <div class="flights__departing">
+                                <label for="flights-departing">departing</label>
+                                <input type="date" name="flight-departing">
+                            </div>
+                            <div class="flights__returning">
+                                <label for="flights-returning">returning</label>
+                                <input type="date" name="flight-returning">
+                            </div>
+                        </div>
+                        <input type="submit" value="search" class="search-btn">
+                    </form>
+                </div>
+                <div class="cars">
+                    <form action="">
+                        <div class="cars-form">
+                            <div class="cars-location">
+                                <input type="search" name="pickup" class="pickup" placeholder="Pick up">
+                                <input type="search" name="dropoff" class="drop-off" placeholder="Drop Off">
+                            </div>
+                            <div class="cars-datetime">
+                                <div class="cars-datetime-input">
+                                    <label for="pick-up-date">pick-up date</label>
+                                    <input type="date" name="pick-up-date">
+                                </div>
+                                <div class="cars-datetime-input">
+                                    <label for="drop-off-date">drop-off date</label>
+                                    <input type="date" name="drop-off-date">
+                                </div>
+                                <div class="cars-datetime-input">
+                                    <label for="pick-up-time">pick-up time</label>
+                                    <input type="time" name="pick-up-time">
+                                </div>
+                                <div class="cars-datetime-input">
+                                    <label for="drop-off-time">drop-off time</label>
+                                    <input type="time" name="drop-off-time">
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" value="search" class="search-btn">
+                    </form>
+                </div>
+                <div class="packages">
+                    <form action="" class="">
+                        <div class="packages-form">
+                            <input type="search" name="packages__from" class="packages__from" placeholder="Leaving from">
+                            <input type="search" name="packages__going-to" class="packages__going-to" placeholder="Going to">
+                            <div class="packages__departing">
+                                <label for="packages-departing">departing</label>
+                                <input type="date" name="packages-departing">
+                            </div>
+                            <div class="packages__returning">
+                                <label for="packages-returning">returning</label>
+                                <input type="date" name="packages-returning">
+                            </div>
+                        </div>
+                        <input type="submit" value="search" class="search-btn">
+                    </form>
+                </div>
+                <div class="things">
+                    <form action="" class="">
+                        <div class="things-form">
+                            <input type="search" name="things-location" class="things-location" placeholder="Things to do in">
+                            <div class="things__from">
+                                <label for="things-from">From</label>
+                                <input type="date" name="things-from">
+                            </div>
+                            <div class="things__to">
+                                <label for="things-to">To</label>
+                                <input type="date" name="things-to">
+                            </div>
+                        </div>
+                        <input type="submit" value="search" class="search-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!---------------------------------FOOTER SECTION--------------------------------->
+
+    <footer>
+        <div class="row">
+            <div class="footer-bottom">
+                <div class="footer-bottom-item"><p class="copyright">Copyright © 2021 All Rights Reserved</p></div>
+                <div class="footer-bottom-item">
+                    <ul class="footer-nav-links">
+                        <li><a href="# ">Home</a></li>
+                        <li><a href="# ">Bookings</a></li>
+                        <li><a href="# ">About Us</a></li>
+                        <li><a href="# ">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-credits">
+                <p class="made-by-text">Made with <i class="ion-md-heart heart-icon"></i> in <i class="fab fa-canadian-maple-leaf maple-leaf-icon"></i> Toronto, Canada by Harshit Behl & Kulpreet Singh</p>
+            </div>
+        </div>
+      </footer>
+  
+    <script src="js/booking.js"></script>
+</body>
+</html>
