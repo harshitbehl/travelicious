@@ -1,0 +1,24 @@
+header{
+    animation-name: backgroundChange;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes backgroundChange {
+    0% {
+        background-image: url("../../images/destinations/india/india-1.jpg");
+    }
+    25% {
+        background-image: url("../../images/destinations/india/india-2.jpg");
+    }
+    50% {
+        background-image: url("../../images/destinations/india/india-3.jpg");
+    }
+    75% {
+        background-image: url("../../images/destinations/india/india-4.jpg");
+    }
+    100% {
+        background-image: url("../../images/destinations/india/india-1.jpg");
+    }
+}

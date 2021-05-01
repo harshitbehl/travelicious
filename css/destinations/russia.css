@@ -1,0 +1,23 @@
+header{
+    animation-name: backgroundChange;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes backgroundChange {
+    0% {
+        background-image: url("../../images/destinations/");
+    }
+    25% {
+        background-image: url("../cssImages/headerBackgroundImage2.jpg");
+    }
+    50% {
+        background-image: url("../cssImages/headerBackgroundImage3.jpg");
+    }
+    75% {
+        background-image: url("../cssImages/headerBackgroundImage4.jpg");
+    }
+    100% {
+        background-image: url("../cssImages/headerBackgroundImage1.jpg");
+    }
+}

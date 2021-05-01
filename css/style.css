@@ -186,53 +186,6 @@ header {
     border-bottom: 2px solid #a35638;
 }
 
-.main-nav-dropdown-link {
-    position: relative;
-}
-
-.main-nav-dropdown-link>a:hover {
-    border-bottom: none;
-}
-
-.main-nav-dropdown {
-    list-style-type: none;
-    /* display: none; */
-    visibility: hidden;
-    margin-top: 2px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-    border-radius: 10px;
-    position: absolute;
-    width: max-content;
-    left: -10px;
-    overflow: hidden;
-    height: 0;
-    transition: all 0.5s ease;
-}
-
-.main-nav-dropdown-link:hover .main-nav-dropdown {
-    height: 170px;
-    /* display: block; */
-    visibility: visible;
-}
-
-.main-nav-dropdown li:hover {
-    background-color: rgba(163, 86, 56, 0.6);
-}
-
-.main-nav-dropdown li a {
-    color: white;
-    height: 100%;
-    width: 100%;
-    display: inline-block;
-    padding: 10px;
-    font-size: 0.9rem;
-    font-weight: 300;
-}
-
-.dropdown-icon {
-    transform: translateY(5px);
-}
-
 .showcase {
     width: 80%;
     margin: 0 auto;
